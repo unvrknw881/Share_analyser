@@ -26,7 +26,7 @@ const shareAnalyser = function (e) {
       showMessage('Number of shares cannot be zero', 'red');
     }  */
   
-  if (investedSharePrice && numberOfShares && finalSharePrice) {
+  if (investedSharePrice && numberOfShares && finalSharePrice && (numberOfShares != 0)) {
     
     
     
