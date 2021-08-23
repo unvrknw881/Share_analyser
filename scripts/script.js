@@ -21,7 +21,13 @@ const shareAnalyser = function (e) {
   const numberOfShares = shareCount.value;
   const finalSharePrice = finalPrice.value;
   if (investedSharePrice && numberOfShares && finalSharePrice) {
-    if (investedSharePrice < finalSharePrice) {
+    
+    
+    if (numberOfShares == 0){
+      showMessage('Number of shares cannot be zero', 'red');
+    }
+    
+    else if (investedSharePrice < finalSharePrice) {
       showMessage(
         `You have invested in ${numberOfShares} shares at ₹${investedSharePrice}, now the final price is ₹${finalSharePrice} & you have made a profit of ₹${
           (finalSharePrice - investedSharePrice) * numberOfShares
