@@ -22,15 +22,12 @@ const shareAnalyser = function (e) {
   const finalSharePrice = finalPrice.value;
   
   
-  /*  if (numberOfShares == 0){
-      showMessage('Number of shares cannot be zero', 'red');
-    }  */
   
   if (investedSharePrice && numberOfShares && finalSharePrice && (numberOfShares != 0)) {
     
     
-  //  if (numberOfShares > 1)
- // {
+    if (numberOfShares > 1)
+  {
      
      if (investedSharePrice < finalSharePrice)
      
