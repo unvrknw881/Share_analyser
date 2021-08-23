@@ -23,7 +23,7 @@ const shareAnalyser = function (e) {
   
   
   
-  if (investedSharePrice && numberOfShares && finalSharePrice && (numberOfShares != 0)) {
+  if (investedSharePrice && numberOfShares && finalSharePrice) {
     
     
     if (numberOfShares > 1)
