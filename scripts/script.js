@@ -31,7 +31,7 @@ const shareAnalyser = function (e) {
      
      if (investedSharePrice < finalSharePrice)
      
-{
+    {
      
        showMessage(
         `You have invested in ${numberOfShares} shares at ₹${investedSharePrice}, now the final price is ₹${finalSharePrice} & you have made a profit of ₹${
@@ -40,7 +40,7 @@ const shareAnalyser = function (e) {
         'green'
       );
        
-     } 
+    } 
       
       else if (investedSharePrice > finalSharePrice) 
       {
@@ -61,11 +61,7 @@ const shareAnalyser = function (e) {
          }
   
  } 
-   /* else 
-    {
-    showMessage('Enter all the values, and make sure that number of shares purchased should be atleast one.', 'red');
-    } */
-  
+   
   
   else if (numberOfShares == 1)
   {
@@ -98,12 +94,14 @@ const shareAnalyser = function (e) {
       
       }
   } 
+    
   
   else 
   {
     showMessage('Enter all the values, and make sure that number of shares purchased should be atleast one.', 'red');
   }
   
+} 
 
   
 };
