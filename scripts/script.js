@@ -94,14 +94,16 @@ const shareAnalyser = function (e) {
       
       }
   } 
-    
+
+  
+}     
   
   else 
   {
     showMessage('Enter all the values, and make sure that number of shares purchased should be atleast one.', 'red');
   }
   
-} 
+
 
   
 };
