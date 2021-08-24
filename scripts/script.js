@@ -20,17 +20,17 @@ const shareAnalyser = function (e) {
   const investedSharePrice = investedPrice.value;
   const numberOfShares = shareCount.value;
   const finalSharePrice = finalPrice.value;
-  if (investedSharePrice && numberOfShares && finalSharePrice) {
+  if (investedSharePrice && numberOfShares && finalSharePrice && (numberOfShares != 0)) {
     if (investedSharePrice < finalSharePrice) {
       showMessage(
-        `You have invested ${numberOfShares} at ₹${investedSharePrice} now the final price is ₹${finalSharePrice} & you have made a profit of ₹${
+        `You have invested in ${numberOfShares} at ₹${investedSharePrice}, now the final price is ₹${finalSharePrice} & you have made a profit of ₹${
           (finalSharePrice - investedSharePrice) * numberOfShares
         }`,
         'green'
       );
     } else if (investedSharePrice > finalSharePrice) {
       showMessage(
-        `You have invested ${numberOfShares} shared at ₹${investedSharePrice} now the final price is ₹${finalSharePrice} & you have made a loss of ₹${
+        `You have invested in ${numberOfShares} shares at ₹${investedSharePrice}, now the final price is ₹${finalSharePrice} & you have made a loss of ₹${
           (investedSharePrice - finalSharePrice) * numberOfShares
         }`,
         'red'
@@ -39,7 +39,7 @@ const shareAnalyser = function (e) {
       showMessage('You have no profit no loss', 'black');
     }
   } else {
-    showMessage('Enter all the values', 'red');
+    showMessage('Enter all the values, and make sure that number of shares purchased should be atleast one.', 'red');
   }
 };
 
