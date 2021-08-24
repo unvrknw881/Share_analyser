@@ -39,7 +39,7 @@ const shareAnalyser = function (e) {
       showMessage('You have no profit no loss', 'black');
     }
   } else {
-    showMessage('Enter all the values, and make sure that number of shares purchased should be atleast one.', 'red');
+    showMessage('Enter all the values', 'red');
   }
 };
 
